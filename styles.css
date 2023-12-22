@@ -1,0 +1,230 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("https://www.ning.com/wp-content/uploads/2019/05/create-food-website.jpg");
+    width: 200px;
+    height: 1300px;
+  
+
+}
+#header{
+    position: relative;
+    left: 500px;
+    top: 100px;
+    color: white;
+    font-size: 20px;
+    white-space: nowrap;
+}
+#para{
+    font-size: 50px;
+    color: red;
+    position: relative;
+   
+    white-space: nowrap;
+}
+
+#h2{
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+.search-container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 350px;
+    left: 600px;
+    border-radius: 1rem;
+}
+
+#search {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    bottom: 39px;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#dish_img{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+#text{
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+
+
+
+
+
+
+/* Update your existing styles.css file with the following styles */
+
+#randomRecipeContainer {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed for spacing between random recipe and search results */
+}
+
+#searchResultsContainer {
+    margin-top: 20px; /* Adjust as needed for spacing between random recipe and search results */
+}
+
+#searchResults {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; /* Adjust as needed for spacing between items */
+}
+
+#searchResults div {
+    text-align: center; 
+    margin: 20px; /* Adjust as needed for spacing around each item */
+    color: white; /* Set text color to white */
+    border: 2px solid #00FF00; /* Border color for the div (green) */
+    padding: 10px; /* Padding inside the border */
+    background-color: #00FF00; /* Background color inside the border (green) */
+
+}
+
+#searchResults img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #00FF00; /* Border color for the image (green) */
+    background-color: #00FF00; /* Background color inside the border (green) */
+}
+
+#searchResults div h3 {
+    margin-top: 10px; /* Adjust as needed for spacing between image and name */
+    font-size: 18px; /* Adjust font size as needed */
+    color: white; /* Set text color to white */
+    
+   
+}
+
+/* Add margin to separate the random recipe from the search results */
+#text {
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #para {
+        font-size: 20px;
+    }
+
+    #header {
+        left: 0;
+    }
+
+    #h2 {
+        left: 0;
+    }
+
+    .search-container {
+        left: 0;
+        bottom: 0;
+    }
+
+    #dish_img {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Add this to your existing styles.css */
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-container img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.popup-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-container button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Add these styles to your existing CSS */
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.ingredients-popup {
+    margin-top: 20px;
+}
+
+/* ... Your existing styles ... */
+h1{
+    position: relative;
+    top: 400px;
+    left: 650px;
+    color: aqua;
+    font-size: 20px;
+}
